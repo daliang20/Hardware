@@ -1,0 +1,495 @@
+
+State Machine - |system|sys_vga:u0|sys_vga_mm_interconnect_1:mm_interconnect_1|altera_merlin_burst_adapter:new_sdram_controller_0_s1_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |system|sys_vga:u0|sys_vga_mm_interconnect_1:mm_interconnect_1|altera_merlin_burst_adapter:ram_s1_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |system|sys_vga:u0|sys_vga_mm_interconnect_1:mm_interconnect_1|altera_merlin_burst_adapter:fifo_hps_to_fpga_in_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[54].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[52].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[50].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[48].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[47].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[62].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[55].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[53].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[51].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[49].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|HPS_to_FPGA_state
+Name HPS_to_FPGA_state.00000000 HPS_to_FPGA_state.00001000 HPS_to_FPGA_state.00000100 HPS_to_FPGA_state.00000010 
+HPS_to_FPGA_state.00000000 0 0 0 0 
+HPS_to_FPGA_state.00000010 1 0 0 1 
+HPS_to_FPGA_state.00000100 1 0 1 0 
+HPS_to_FPGA_state.00001000 1 1 0 0 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[3].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[2].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[1].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[0].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[63].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[61].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[60].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[59].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[58].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[57].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[56].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|sys_vga:u0|alt_vipitc131_IS2Vid:alt_vip_itc_0|alt_vipitc131_IS2Vid_statemachine:statemachine|state_int
+Name state_int.INSERT_ANC state_int.WAIT_FOR_ANC state_int.WAIT_FOR_SYNCH state_int.SYNCHED state_int.FIND_MODE state_int.INTERLACING state_int.HEIGHT_0 state_int.HEIGHT_1 state_int.HEIGHT_2 state_int.HEIGHT_3 state_int.WIDTH_0 state_int.WIDTH_1 state_int.WIDTH_2 state_int.WIDTH_3 state_int.FIND_SOP 
+state_int.FIND_SOP 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state_int.WIDTH_3 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state_int.WIDTH_2 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state_int.WIDTH_1 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state_int.WIDTH_0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state_int.HEIGHT_3 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state_int.HEIGHT_2 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state_int.HEIGHT_1 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state_int.HEIGHT_0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state_int.INTERLACING 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state_int.FIND_MODE 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state_int.SYNCHED 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state_int.WAIT_FOR_SYNCH 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state_int.WAIT_FOR_ANC 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state_int.INSERT_ANC 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[23].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[14].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[12].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[10].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[8].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|sys_vga:u0|sys_vga_mm_interconnect_1:mm_interconnect_1|altera_merlin_burst_adapter:fifo_fpga_to_hps_out_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[4].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[15].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[13].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[11].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[9].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[6].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|sys_vga:u0|sys_vga_mm_interconnect_2:mm_interconnect_2|altera_merlin_burst_adapter:pushbuttons_s1_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |system|sys_vga:u0|sys_vga_mm_interconnect_2:mm_interconnect_2|altera_merlin_burst_adapter:hex5_hex0_s1_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |system|sys_vga:u0|sys_vga_mm_interconnect_2:mm_interconnect_2|altera_merlin_burst_adapter:fifo_fpga_to_hps_out_csr_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |system|sys_vga:u0|sys_vga_mm_interconnect_2:mm_interconnect_2|altera_merlin_burst_adapter:fifo_hps_to_fpga_in_csr_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |system|sys_vga:u0|sys_vga_mm_interconnect_2:mm_interconnect_2|altera_merlin_burst_adapter:sysid_qsys_0_control_slave_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |system|sys_vga:u0|sys_vga_mm_interconnect_2:mm_interconnect_2|altera_merlin_burst_adapter:reg32_avalon_interface_0_avalon_slave_0_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |system|sys_vga:u0|sys_vga_mm_interconnect_2:mm_interconnect_2|altera_merlin_burst_adapter:system_console_avalon_jtag_slave_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |system|sys_vga:u0|sys_vga_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:arm_a9_hps_f2h_axi_slave_rd_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |system|sys_vga:u0|sys_vga_mm_interconnect_0:mm_interconnect_0|altera_merlin_burst_adapter:arm_a9_hps_f2h_axi_slave_wr_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |system|sys_vga:u0|sys_vga_new_sdram_controller_0:new_sdram_controller_0|i_state
+Name i_state.111 i_state.101 i_state.011 i_state.010 i_state.001 i_state.000 
+i_state.000 0 0 0 0 0 0 
+i_state.001 0 0 0 0 1 1 
+i_state.010 0 0 0 1 0 1 
+i_state.011 0 0 1 0 0 1 
+i_state.101 0 1 0 0 0 1 
+i_state.111 1 0 0 0 0 1 
+
+State Machine - |system|sys_vga:u0|sys_vga_new_sdram_controller_0:new_sdram_controller_0|i_next
+Name i_next.111 i_next.101 i_next.010 i_next.000 
+i_next.000 0 0 0 0 
+i_next.010 0 0 1 1 
+i_next.101 0 1 0 1 
+i_next.111 1 0 0 1 
+
+State Machine - |system|sys_vga:u0|sys_vga_new_sdram_controller_0:new_sdram_controller_0|m_state
+Name m_state.100000000 m_state.010000000 m_state.001000000 m_state.000100000 m_state.000010000 m_state.000001000 m_state.000000100 m_state.000000010 m_state.000000001 
+m_state.000000001 0 0 0 0 0 0 0 0 0 
+m_state.000000010 0 0 0 0 0 0 0 1 1 
+m_state.000000100 0 0 0 0 0 0 1 0 1 
+m_state.000001000 0 0 0 0 0 1 0 0 1 
+m_state.000010000 0 0 0 0 1 0 0 0 1 
+m_state.000100000 0 0 0 1 0 0 0 0 1 
+m_state.001000000 0 0 1 0 0 0 0 0 1 
+m_state.010000000 0 1 0 0 0 0 0 0 1 
+m_state.100000000 1 0 0 0 0 0 0 0 1 
+
+State Machine - |system|sys_vga:u0|sys_vga_new_sdram_controller_0:new_sdram_controller_0|m_next
+Name m_next.010000000 m_next.000010000 m_next.000001000 m_next.000000001 
+m_next.000000001 0 0 0 0 
+m_next.000001000 0 0 1 1 
+m_next.000010000 0 1 0 1 
+m_next.010000000 1 0 0 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[28].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[27].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[26].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[25].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[7].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[46].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[45].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[39].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[16].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[5].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[30].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[29].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[18].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[17].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[22].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[21].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[20].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[19].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[38].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[37].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[36].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[35].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[44].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[43].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[42].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[41].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[34].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[33].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[31].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[40].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[32].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|zezima:z|chess_board:cb|square:squares[24].sq|fsm_st
+Name fsm_st.ITERATE_ST 
+fsm_st.IDLE_ST 0 
+fsm_st.ITERATE_ST 1 
+
+State Machine - |system|sys_vga:u0|sys_vga_mm_interconnect_2:mm_interconnect_2|altera_merlin_burst_adapter:alt_vip_vfr_0_avalon_slave_burst_adapter|altera_merlin_burst_adapter_13_1:altera_merlin_burst_adapter_13_1.burst_adapter|state
+Name state.ST_IDLE state.ST_UNCOMP_WR_SUBBURST state.ST_UNCOMP_TRANS state.ST_COMP_TRANS 
+state.ST_IDLE 0 0 0 0 
+state.ST_COMP_TRANS 1 0 0 1 
+state.ST_UNCOMP_TRANS 1 0 1 0 
+state.ST_UNCOMP_WR_SUBBURST 1 1 0 0 
+
+State Machine - |system|sys_vga:u0|alt_vipvfr131_vfr:alt_vip_vfr_0|alt_vipvfr131_vfr_controller:controller|state
+Name state.WAITING_END_FRAME state.SENDING_GO_AND_ENABLE_INTERRUPT state.SENDING_TYPE state.SENDING_WORDS state.SENDING_SAMPLES state.SENDING_ADDRESS state.IDLE 
+state.IDLE 0 0 0 0 0 0 0 
+state.SENDING_ADDRESS 0 0 0 0 0 1 1 
+state.SENDING_SAMPLES 0 0 0 0 1 0 1 
+state.SENDING_WORDS 0 0 0 1 0 0 1 
+state.SENDING_TYPE 0 0 1 0 0 0 1 
+state.SENDING_GO_AND_ENABLE_INTERRUPT 0 1 0 0 0 0 1 
+state.WAITING_END_FRAME 1 0 0 0 0 0 1 
+
+State Machine - |system|sys_vga:u0|alt_vipvfr131_vfr:alt_vip_vfr_0|alt_vipvfr131_prc:prc|alt_vipvfr131_prc_core:prc_core|state
+Name state.ENDING state.RUNNING state.WAITING state.IDLE 
+state.IDLE 0 0 0 0 
+state.WAITING 0 0 1 1 
+state.RUNNING 0 1 0 1 
+state.ENDING 1 0 0 1 

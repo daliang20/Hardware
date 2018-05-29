@@ -1,0 +1,528 @@
+Info: Starting: Create simulation model
+Info: qsys-generate "C:\Users\David\Desktop\chess hardware\Hardware\sys_vga.qsys" --simulation=VERILOG --allow-mixed-language-simulation --output-directory="C:\Users\David\Desktop\chess hardware\Hardware\sys_vga\simulation" --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading Hardware/sys_vga.qsys
+Progress: Reading input file
+Progress: Adding Arm_A9_HPS [altera_hps 17.1]
+Progress: Parameterizing module Arm_A9_HPS
+Progress: Adding alt_vip_itc_0 [alt_vip_itc 14.0]
+Progress: Parameterizing module alt_vip_itc_0
+Progress: Adding alt_vip_vfr_0 [alt_vip_vfr 14.0]
+Progress: Parameterizing module alt_vip_vfr_0
+Progress: Adding clock_bridge_0 [altera_clock_bridge 17.1]
+Progress: Parameterizing module clock_bridge_0
+Progress: Adding fifo_fpga_to_hps [altera_avalon_fifo 17.1]
+Progress: Parameterizing module fifo_fpga_to_hps
+Progress: Adding fifo_hps_to_fpga [altera_avalon_fifo 17.1]
+Progress: Parameterizing module fifo_hps_to_fpga
+Progress: Adding hex5_hex0 [altera_avalon_pio 17.1]
+Progress: Parameterizing module hex5_hex0
+Progress: Adding new_sdram_controller_0 [altera_avalon_new_sdram_controller 17.1]
+Progress: Parameterizing module new_sdram_controller_0
+Progress: Adding pll_0 [altera_pll 17.1]
+Progress: Parameterizing module pll_0
+Progress: Adding pll_1 [altera_pll 17.1]
+Progress: Parameterizing module pll_1
+Progress: Adding pushbuttons [altera_avalon_pio 17.1]
+Progress: Parameterizing module pushbuttons
+Progress: Adding ram [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module ram
+Progress: Adding reg32_avalon_interface_0 [reg32_avalon_interface 1.0]
+Progress: Parameterizing module reg32_avalon_interface_0
+Progress: Adding sys_sdram_pll_0 [altera_up_avalon_sys_sdram_pll 16.1]
+Progress: Parameterizing module sys_sdram_pll_0
+Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 17.1]
+Progress: Parameterizing module sysid_qsys_0
+Progress: Adding system_console [altera_avalon_jtag_uart 17.1]
+Progress: Parameterizing module system_console
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: sys_vga.Arm_A9_HPS: HPS Main PLL counter settings: n = 0  m = 73
+Info: sys_vga.Arm_A9_HPS: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: sys_vga.Arm_A9_HPS: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: sys_vga.Arm_A9_HPS: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: sys_vga.Arm_A9_HPS: Ensure that valid Cortex A9 boot code is available to the HPS system when enabling boot from FPGA and h2f_axi_master interface is connecting to slave component start at address 0x0.
+Warning: sys_vga.alt_vip_vfr_0: The module properties SIMULATION_MODEL_IN_VERILOG and SIMULATION_MODEL_IN_VHDL can not both be set when using the SIMULATION file property: src_hdl/alt_vipvfr131_vfr.v, src_hdl/alt_vipvfr131_vfr_controller.v, src_hdl/alt_vipvfr131_vfr_control_packet_encoder.v, src_hdl/alt_vipvfr131_prc.v, src_hdl/alt_vipvfr131_prc_core.v, src_hdl/alt_vipvfr131_prc_read_master.v, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_package.vhd, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_avalon_mm_master.v, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_unpack_data.v, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_avalon_mm_slave.v, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_stream_output.v, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_pulling_width_adapter.vhd, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_general_fifo.vhd, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_fifo_usedw_calculator.vhd, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_gray_clock_crosser.vhd, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_std_logic_vector_delay.vhd, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_one_bit_delay.vhd, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_logic_fifo.vhd, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_ram_fifo.vhd
+Info: sys_vga.new_sdram_controller_0: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: sys_vga.pll_0: The legal reference clock frequency is 50.0 MHz..800.0 MHz
+Info: sys_vga.pll_0: Able to implement PLL with user settings
+Info: sys_vga.pll_1: The legal reference clock frequency is 5.0 MHz..800.0 MHz
+Info: sys_vga.pll_1: Able to implement PLL with user settings
+Info: sys_vga.sys_sdram_pll_0: Refclk Freq: 50.0
+Info: sys_vga.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: sys_vga.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Info: sys_vga.system_console: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Warning: sys_vga.Arm_A9_HPS: Arm_A9_HPS.f2h_boot_from_fpga must be exported, or connected to a matching conduit.
+Warning: sys_vga.pll_0: pll_0.locked must be exported, or connected to a matching conduit.
+Warning: sys_vga.pll_1: pll_1.locked must be exported, or connected to a matching conduit.
+Warning: sys_vga.alt_vip_vfr_0: Interrupt sender alt_vip_vfr_0.interrupt_sender is not connected to an interrupt receiver
+Warning: sys_vga.: You have exported the interface fifo_fpga_to_hps.in but not its associated reset interface.  Export the driver(s) of fifo_fpga_to_hps.reset_in
+Warning: sys_vga.: You have exported the interface fifo_fpga_to_hps.in_csr but not its associated reset interface.  Export the driver(s) of fifo_fpga_to_hps.reset_in
+Warning: sys_vga.: You have exported the interface fifo_hps_to_fpga.out but not its associated reset interface.  Export the driver(s) of fifo_hps_to_fpga.reset_out
+Warning: sys_vga.: You have exported the interface fifo_hps_to_fpga.out_csr but not its associated reset interface.  Export the driver(s) of fifo_hps_to_fpga.reset_out
+Warning: sys_vga.: You have exported the interface ram.s2 but not its associated reset interface.  Export the driver(s) of ram.reset2
+Info: sys_vga: Generating sys_vga "sys_vga" for SIM_VERILOG
+Info: Interconnect is inserted between master alt_vip_vfr_0.avalon_master and slave Arm_A9_HPS.f2h_axi_slave because the master is of type avalon and the slave is of type axi.
+Info: Inserting clock-crossing logic between cmd_demux.src1 and cmd_mux_001.sink0
+Info: Inserting clock-crossing logic between cmd_demux_001.src1 and cmd_mux_001.sink1
+Info: Inserting clock-crossing logic between rsp_demux_001.src0 and rsp_mux.sink1
+Info: Inserting clock-crossing logic between rsp_demux_001.src1 and rsp_mux_001.sink1
+Warning: Arm_A9_HPS.f2h_irq0: Cannot connect clock for irq_mapper.sender
+Warning: Arm_A9_HPS.f2h_irq0: Cannot connect reset for irq_mapper.sender
+Warning: Arm_A9_HPS.f2h_irq1: Cannot connect clock for irq_mapper_001.sender
+Warning: Arm_A9_HPS.f2h_irq1: Cannot connect reset for irq_mapper_001.sender
+Info: Arm_A9_HPS: "Running  for module: Arm_A9_HPS"
+Info: Arm_A9_HPS: HPS Main PLL counter settings: n = 0  m = 73
+Info: Arm_A9_HPS: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: Arm_A9_HPS: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: Arm_A9_HPS: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: Arm_A9_HPS: Ensure that valid Cortex A9 boot code is available to the HPS system when enabling boot from FPGA and h2f_axi_master interface is connecting to slave component start at address 0x0.
+Info: Arm_A9_HPS: "sys_vga" instantiated altera_hps "Arm_A9_HPS"
+Info: alt_vip_itc_0: "sys_vga" instantiated alt_vip_itc "alt_vip_itc_0"
+Info: alt_vip_vfr_0: Generating Verilog simulation model
+Warning: Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Warning: Verilog Module Declaration warning at alt_vipvfr131_prc_read_master.v(47): ignored anonymous port(s) indicated by duplicate or dangling comma(s) in the port list for module "alt_vipvfr131_prc_read_master" File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_prc_read_master.v Line: 47
+Warning: Verilog HDL Implicit Net warning at alt_vipvfr131_prc.v(142): created implicit net for "master_clock" File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_prc.v Line: 142
+Warning: Verilog HDL Implicit Net warning at alt_vipvfr131_prc.v(143): created implicit net for "master_reset" File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_prc.v Line: 143
+Warning: VHDL Subtype or Type Declaration warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(178): subtype or type has null range File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd Line: 178
+Warning: VHDL Subtype or Type Declaration warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(181): subtype or type has null range File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd Line: 181
+Warning: VHDL Subtype or Type Declaration warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(261): subtype or type has null range File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd Line: 261
+Warning: VHDL Subtype or Type Declaration warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(262): subtype or type has null range File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd Line: 262
+Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(178): object "wdata_fifo_wrusedw" assigned a value but never read File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd Line: 178
+Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(179): object "wdata_fifo_full" assigned a value but never read File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd Line: 179
+Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(180): object "wdata_fifo_almost_full" assigned a value but never read File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd Line: 180
+Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(182): object "wdata_fifo_empty" assigned a value but never read File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd Line: 182
+Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(183): object "wdata_fifo_almost_empty" assigned a value but never read File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd Line: 183
+Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(184): object "wdata_fifo_wrreq" assigned a value but never read File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd Line: 184
+Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(185): object "wdata_fifo_data" assigned a value but never read File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd Line: 185
+Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(186): object "wdata_fifo_rdreq" assigned a value but never read File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd Line: 186
+Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(187): object "wdata_fifo_q" assigned a value but never read File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd Line: 187
+Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(189): object "wdata_fifo_empty_next" assigned a value but never read File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd Line: 189
+Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(193): object "rdata_fifo_full" assigned a value but never read File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd Line: 193
+Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(194): object "rdata_fifo_almost_full" assigned a value but never read File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd Line: 194
+Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(195): object "rdata_fifo_rdusedw" assigned a value but never read File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd Line: 195
+Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(197): object "rdata_fifo_almost_empty" assigned a value but never read File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd Line: 197
+Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(212): object "cmd_fifo_wrusedw" assigned a value but never read File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd Line: 212
+Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(214): object "cmd_fifo_almost_full" assigned a value but never read File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd Line: 214
+Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(215): object "cmd_fifo_rdusedw" assigned a value but never read File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd Line: 215
+Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(217): object "cmd_fifo_almost_empty" assigned a value but never read File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd Line: 217
+Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(229): object "writing" assigned a value but never read File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd Line: 229
+Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(229): object "reading" assigned a value but never read File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd Line: 229
+Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(239): object "wdata_en" assigned a value but never read File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd Line: 239
+Warning: VHDL Signal Declaration warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(260): used implicit default value for signal "byte_enable_next" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd Line: 260
+Warning: VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(424): ignored assignment of value to null range File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd Line: 424
+Warning: VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(425): ignored assignment of value to null range File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd Line: 425
+Warning: VHDL warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(437): ignored assignment of value to null range File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd Line: 437
+Warning: VHDL Process Statement warning at alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd(641): inferring latch(es) for signal or variable "byte_enable", which holds its previous value in one or more paths through the process File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd Line: 641
+Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_general_fifo.vhd(230): object "ram_fifo_empty" assigned a value but never read File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_common_general_fifo.vhd Line: 230
+Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_ram_fifo.vhd(129): object "port_a_q" assigned a value but never read File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_common_ram_fifo.vhd Line: 129
+Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_general_fifo.vhd(264): object "logic_fifo_full" assigned a value but never read File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_common_general_fifo.vhd Line: 264
+Warning: VHDL Subtype or Type Declaration warning at alt_vipvfr131_common_gray_clock_crosser.vhd(70): subtype or type has null range File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_common_gray_clock_crosser.vhd Line: 70
+Warning: Verilog HDL or VHDL warning at alt_vipvfr131_common_ram_fifo.vhd(129): object "port_a_q" assigned a value but never read File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_common_ram_fifo.vhd Line: 129
+Warning: Verilog HDL Always Construct warning at alt_vipvfr131_common_avalon_mm_slave.v(45): inferring latch(es) for variable "interrupt_register", which holds its previous value in one or more paths through the always construct File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_common_avalon_mm_slave.v Line: 45
+Warning: Verilog HDL assignment warning at alt_vipvfr131_common_avalon_mm_slave.v(72): truncated value with size 35 to match size of target (32) File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_common_avalon_mm_slave.v Line: 72
+Warning: Verilog HDL Always Construct warning at alt_vipvfr131_common_avalon_mm_slave.v(45): inferring latch(es) for variable "interrupt_register", which holds its previous value in one or more paths through the always construct File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_common_avalon_mm_slave.v Line: 45
+Warning: Verilog HDL assignment warning at alt_vipvfr131_common_avalon_mm_slave.v(72): truncated value with size 49 to match size of target (32) File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_common_avalon_mm_slave.v Line: 72
+Warning: Verilog HDL Always Construct warning at alt_vipvfr131_vfr_control_packet_encoder.v(62): inferring latch(es) for variable "control_data", which holds its previous value in one or more paths through the always construct File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_vfr_control_packet_encoder.v Line: 62
+Warning: Verilog HDL assignment warning at alt_vipvfr131_vfr_control_packet_encoder.v(82): truncated value with size 32 to match size of target (4) File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_vfr_control_packet_encoder.v Line: 82
+Warning: Net "control_header_state[7..5]" at alt_vipvfr131_vfr_control_packet_encoder.v(58) has no driver or initial value, using a default initial value '0' File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_vfr_control_packet_encoder.v Line: 58
+Warning: Net "control_header_state[3..1]" at alt_vipvfr131_vfr_control_packet_encoder.v(58) has no driver or initial value, using a default initial value '0' File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_vfr_control_packet_encoder.v Line: 58
+Warning: Net "control_header_data[7..5]" at alt_vipvfr131_vfr_control_packet_encoder.v(59) has no driver or initial value, using a default initial value '0' File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_vfr_control_packet_encoder.v Line: 59
+Warning: Net "control_header_data[3..1]" at alt_vipvfr131_vfr_control_packet_encoder.v(59) has no driver or initial value, using a default initial value '0' File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0007_sopcqmap/alt_vipvfr131_vfr_control_packet_encoder.v Line: 59
+Info: alt_vip_vfr_0: Generated simulation model sys_vga_alt_vip_vfr_0.vo
+Info: alt_vip_vfr_0: "sys_vga" instantiated alt_vip_vfr "alt_vip_vfr_0"
+Info: fifo_fpga_to_hps: Starting RTL generation for module 'sys_vga_fifo_fpga_to_hps'
+Info: fifo_fpga_to_hps:   Generation command is [exec C:/intelfpga_lite/17.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_fifo -- C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_fifo/generate_rtl.pl --name=sys_vga_fifo_fpga_to_hps --dir=C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0009_fifo_fpga_to_hps_gen/ --quartus_dir=C:/intelfpga_lite/17.1/quartus --verilog --config=C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0009_fifo_fpga_to_hps_gen//sys_vga_fifo_fpga_to_hps_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0009_fifo_fpga_to_hps_gen/  ]
+Info: fifo_fpga_to_hps: Done RTL generation for module 'sys_vga_fifo_fpga_to_hps'
+Info: fifo_fpga_to_hps: "sys_vga" instantiated altera_avalon_fifo "fifo_fpga_to_hps"
+Info: hex5_hex0: Starting RTL generation for module 'sys_vga_hex5_hex0'
+Info: hex5_hex0:   Generation command is [exec C:/intelfpga_lite/17.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=sys_vga_hex5_hex0 --dir=C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0010_hex5_hex0_gen/ --quartus_dir=C:/intelfpga_lite/17.1/quartus --verilog --config=C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0010_hex5_hex0_gen//sys_vga_hex5_hex0_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0010_hex5_hex0_gen/  ]
+Info: hex5_hex0: Done RTL generation for module 'sys_vga_hex5_hex0'
+Info: hex5_hex0: "sys_vga" instantiated altera_avalon_pio "hex5_hex0"
+Info: new_sdram_controller_0: Starting RTL generation for module 'sys_vga_new_sdram_controller_0'
+Info: new_sdram_controller_0:   Generation command is [exec C:/intelfpga_lite/17.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=sys_vga_new_sdram_controller_0 --dir=C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0011_new_sdram_controller_0_gen/ --quartus_dir=C:/intelfpga_lite/17.1/quartus --verilog --config=C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0011_new_sdram_controller_0_gen//sys_vga_new_sdram_controller_0_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0011_new_sdram_controller_0_gen/  ]
+Info: new_sdram_controller_0: Done RTL generation for module 'sys_vga_new_sdram_controller_0'
+Info: new_sdram_controller_0: "sys_vga" instantiated altera_avalon_new_sdram_controller "new_sdram_controller_0"
+Info: pll_0: Generating simgen model
+Info: pll_0: Info: ******************************************************************* Info: Running Quartus Prime Shell     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition     Info: Copyright (C) 2017  Intel Corporation. All rights reserved.     Info: Your use of Intel Corporation's design tools, logic functions      Info: and other software and tools, and its AMPP partner logic      Info: functions, and any output files from any of the foregoing      Info: (including device programming or simulation files), and any      Info: associated documentation or information are expressly subject      Info: to the terms and conditions of the Intel Program License      Info: Subscription Agreement, the Intel Quartus Prime License Agreement,     Info: the Intel FPGA IP License Agreement, or other applicable license     Info: agreement, including, without limitation, that your use is for     Info: the sole purpose of programming logic devices manufactured by     Info: Intel and sold by Intel or its authorized distributors.  Please     Info: refer to the applicable agreement for further details.     Info: Processing started: Mon May 28 19:15:00 2018 Info: Command: quartus_sh -t run_simgen_cmd.tcl Info: ******************************************************************* Info: Running Quartus Prime Analysis & Synthesis     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition     Info: Copyright (C) 2017  Intel Corporation. All rights reserved.     Info: Your use of Intel Corporation's design tools, logic functions      Info: and other software and tools, and its AMPP partner logic      Info: functions, and any output files from any of the foregoing      Info: (including device programming or simulation files), and any      Info: associated documentation or information are expressly subject      Info: to the terms and conditions of the Intel Program License      Info: Subscription Agreement, the Intel Quartus Prime License Agreement,     Info: the Intel FPGA IP License Agreement, or other applicable license     Info: agreement, including, without limitation, that your use is for     Info: the sole purpose of programming logic devices manufactured by     Info: Intel and sold by Intel or its authorized distributors.  Please     Info: refer to the applicable agreement for further details.     Info: Processing started: Mon May 28 19:15:01 2018 Info: Command: quartus_map sys_vga_pll_0.qpf --simgen --ini=disable_check_quartus_compatibility_qsys_only=on --simgen_parameter=CBX_HDL_LANGUAGE=VERILOG Info (20034): Auto device selection is not supported for Cyclone V device family. The default device, 5CGXFC7C7F23C8, is set. Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance. Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected Info (12021): Found 1 design units, including 1 entities, in source file sys_vga_pll_0.v     Info (12023): Found entity 1: sys_vga_pll_0 File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0012_pll_0_gen/sys_vga_pll_0.v Line: 2 Info (12127): Elaborating entity "sys_vga_pll_0" for the top level hierarchy Info (12128): Elaborating entity "altera_pll" for hierarchy "altera_pll:altera_pll_i" File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0012_pll_0_gen/sys_vga_pll_0.v Line: 85 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "wire_to_nowhere_64" into its bus Info (12130): Elaborated megafunction instantiation "altera_pll:altera_pll_i" File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0012_pll_0_gen/sys_vga_pll_0.v Line: 85 Info (12133): Instantiated megafunction "altera_pll:altera_pll_i" with the following parameter: File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0012_pll_0_gen/sys_vga_pll_0.v Line: 85     Info (12134): Parameter "fractional_vco_multiplier" = "true"     Info (12134): Parameter "reference_clock_frequency" = "50.0 MHz"     Info (12134): Parameter "operation_mode" = "normal"     Info (12134): Parameter "number_of_clocks" = "1"     Info (12134): Parameter "output_clock_frequency0" = "130.000000 MHz"     Info (12134): Parameter "phase_shift0" = "0 ps"     Info (12134): Parameter "duty_cycle0" = "50"     Info (12134): Parameter "output_clock_frequency1" = "0 MHz"     Info (12134): Parameter "phase_shift1" = "0 ps"     Info (12134): Parameter "duty_cycle1" = "50"     Info (12134): Parameter "output_clock_frequency2" = "0 MHz"     Info (12134): Parameter "phase_shift2" = "0 ps"     Info (12134): Parameter "duty_cycle2" = "50"     Info (12134): Parameter "output_clock_frequency3" = "0 MHz"     Info (12134): Parameter "phase_shift3" = "0 ps"     Info (12134): Parameter "duty_cycle3" = "50"     Info (12134): Parameter "output_clock_frequency4" = "0 MHz"     Info (12134): Parameter "phase_shift4" = "0 ps"     Info (12134): Parameter "duty_cycle4" = "50"     Info (12134): Parameter "output_clock_frequency5" = "0 MHz"     Info (12134): Parameter "phase_shift5" = "0 ps"     Info (12134): Parameter "duty_cycle5" = "50"     Info (12134): Parameter "output_clock_frequency6" = "0 MHz"     Info (12134): Parameter "phase_shift6" = "0 ps"     Info (12134): Parameter "duty_cycle6" = "50"     Info (12134): Parameter "output_clock_frequency7" = "0 MHz"     Info (12134): Parameter "phase_shift7" = "0 ps"     Info (12134): Parameter "duty_cycle7" = "50"     Info (12134): Parameter "output_clock_frequency8" = "0 MHz"     Info (12134): Parameter "phase_shift8" = "0 ps"     Info (12134): Parameter "duty_cycle8" = "50"     Info (12134): Parameter "output_clock_frequency9" = "0 MHz"     Info (12134): Parameter "phase_shift9" = "0 ps"     Info (12134): Parameter "duty_cycle9" = "50"     Info (12134): Parameter "output_clock_frequency10" = "0 MHz"     Info (12134): Parameter "phase_shift10" = "0 ps"     Info (12134): Parameter "duty_cycle10" = "50"     Info (12134): Parameter "output_clock_frequency11" = "0 MHz"     Info (12134): Parameter "phase_shift11" = "0 ps"     Info (12134): Parameter "duty_cycle11" = "50"     Info (12134): Parameter "output_clock_frequency12" = "0 MHz"     Info (12134): Parameter "phase_shift12" = "0 ps"     Info (12134): Parameter "duty_cycle12" = "50"     Info (12134): Parameter "output_clock_frequency13" = "0 MHz"     Info (12134): Parameter "phase_shift13" = "0 ps"     Info (12134): Parameter "duty_cycle13" = "50"     Info (12134): Parameter "output_clock_frequency14" = "0 MHz"     Info (12134): Parameter "phase_shift14" = "0 ps"     Info (12134): Parameter "duty_cycle14" = "50"     Info (12134): Parameter "output_clock_frequency15" = "0 MHz"     Info (12134): Parameter "phase_shift15" = "0 ps"     Info (12134): Parameter "duty_cycle15" = "50"     Info (12134): Parameter "output_clock_frequency16" = "0 MHz"     Info (12134): Parameter "phase_shift16" = "0 ps"     Info (12134): Parameter "duty_cycle16" = "50"     Info (12134): Parameter "output_clock_frequency17" = "0 MHz"     Info (12134): Parameter "phase_shift17" = "0 ps"     Info (12134): Parameter "duty_cycle17" = "50"     Info (12134): Parameter "pll_type" = "General"     Info (12134): Parameter "pll_subtype" = "General" Info (281010): Generating sgate simulator netlist using Simgen SIMGEN_PROGRESS Start of Model generation -- 0% complete SIMGEN_PROGRESS Phase 1 : Internal Objects created -- 25% complete SIMGEN_PROGRESS Phase 2 : Connections between internal objects made -- 60% complete SIMGEN_PROGRESS Phase 3 : Netlist generated -- 100% complete Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning     Info: Peak virtual memory: 4794 megabytes     Info: Processing ended: Mon May 28 19:15:23 2018     Info: Elapsed time: 00:00:22     Info: Total CPU time (on all processors): 00:00:05 Info (23030): Evaluation of Tcl script run_simgen_cmd.tcl was successful Info: Quartus Prime Shell was successful. 0 errors, 0 warnings     Info: Peak virtual memory: 4666 megabytes     Info: Processing ended: Mon May 28 19:15:23 2018     Info: Elapsed time: 00:00:23     Info: Total CPU time (on all processors): 00:00:07
+Info: pll_0: Simgen was successful
+Info: pll_0: "sys_vga" instantiated altera_pll "pll_0"
+Info: pll_1: Generating simgen model
+Info: pll_1: Info: ******************************************************************* Info: Running Quartus Prime Shell     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition     Info: Copyright (C) 2017  Intel Corporation. All rights reserved.     Info: Your use of Intel Corporation's design tools, logic functions      Info: and other software and tools, and its AMPP partner logic      Info: functions, and any output files from any of the foregoing      Info: (including device programming or simulation files), and any      Info: associated documentation or information are expressly subject      Info: to the terms and conditions of the Intel Program License      Info: Subscription Agreement, the Intel Quartus Prime License Agreement,     Info: the Intel FPGA IP License Agreement, or other applicable license     Info: agreement, including, without limitation, that your use is for     Info: the sole purpose of programming logic devices manufactured by     Info: Intel and sold by Intel or its authorized distributors.  Please     Info: refer to the applicable agreement for further details.     Info: Processing started: Mon May 28 19:15:27 2018 Info: Command: quartus_sh -t run_simgen_cmd.tcl Info: ******************************************************************* Info: Running Quartus Prime Analysis & Synthesis     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition     Info: Copyright (C) 2017  Intel Corporation. All rights reserved.     Info: Your use of Intel Corporation's design tools, logic functions      Info: and other software and tools, and its AMPP partner logic      Info: functions, and any output files from any of the foregoing      Info: (including device programming or simulation files), and any      Info: associated documentation or information are expressly subject      Info: to the terms and conditions of the Intel Program License      Info: Subscription Agreement, the Intel Quartus Prime License Agreement,     Info: the Intel FPGA IP License Agreement, or other applicable license     Info: agreement, including, without limitation, that your use is for     Info: the sole purpose of programming logic devices manufactured by     Info: Intel and sold by Intel or its authorized distributors.  Please     Info: refer to the applicable agreement for further details.     Info: Processing started: Mon May 28 19:15:29 2018 Info: Command: quartus_map sys_vga_pll_1.qpf --simgen --ini=disable_check_quartus_compatibility_qsys_only=on --simgen_parameter=CBX_HDL_LANGUAGE=VERILOG Info (20034): Auto device selection is not supported for Cyclone V device family. The default device, 5CGXFC7C7F23C8, is set. Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance. Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected Info (12021): Found 1 design units, including 1 entities, in source file sys_vga_pll_1.v     Info (12023): Found entity 1: sys_vga_pll_1 File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0013_pll_1_gen/sys_vga_pll_1.v Line: 2 Info (12127): Elaborating entity "sys_vga_pll_1" for the top level hierarchy Info (12128): Elaborating entity "altera_pll" for hierarchy "altera_pll:altera_pll_i" File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0013_pll_1_gen/sys_vga_pll_1.v Line: 85 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "wire_to_nowhere_64" into its bus Info (12130): Elaborated megafunction instantiation "altera_pll:altera_pll_i" File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0013_pll_1_gen/sys_vga_pll_1.v Line: 85 Info (12133): Instantiated megafunction "altera_pll:altera_pll_i" with the following parameter: File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0013_pll_1_gen/sys_vga_pll_1.v Line: 85     Info (12134): Parameter "fractional_vco_multiplier" = "false"     Info (12134): Parameter "reference_clock_frequency" = "50.0 MHz"     Info (12134): Parameter "operation_mode" = "direct"     Info (12134): Parameter "number_of_clocks" = "1"     Info (12134): Parameter "output_clock_frequency0" = "65.000000 MHz"     Info (12134): Parameter "phase_shift0" = "0 ps"     Info (12134): Parameter "duty_cycle0" = "50"     Info (12134): Parameter "output_clock_frequency1" = "0 MHz"     Info (12134): Parameter "phase_shift1" = "0 ps"     Info (12134): Parameter "duty_cycle1" = "50"     Info (12134): Parameter "output_clock_frequency2" = "0 MHz"     Info (12134): Parameter "phase_shift2" = "0 ps"     Info (12134): Parameter "duty_cycle2" = "50"     Info (12134): Parameter "output_clock_frequency3" = "0 MHz"     Info (12134): Parameter "phase_shift3" = "0 ps"     Info (12134): Parameter "duty_cycle3" = "50"     Info (12134): Parameter "output_clock_frequency4" = "0 MHz"     Info (12134): Parameter "phase_shift4" = "0 ps"     Info (12134): Parameter "duty_cycle4" = "50"     Info (12134): Parameter "output_clock_frequency5" = "0 MHz"     Info (12134): Parameter "phase_shift5" = "0 ps"     Info (12134): Parameter "duty_cycle5" = "50"     Info (12134): Parameter "output_clock_frequency6" = "0 MHz"     Info (12134): Parameter "phase_shift6" = "0 ps"     Info (12134): Parameter "duty_cycle6" = "50"     Info (12134): Parameter "output_clock_frequency7" = "0 MHz"     Info (12134): Parameter "phase_shift7" = "0 ps"     Info (12134): Parameter "duty_cycle7" = "50"     Info (12134): Parameter "output_clock_frequency8" = "0 MHz"     Info (12134): Parameter "phase_shift8" = "0 ps"     Info (12134): Parameter "duty_cycle8" = "50"     Info (12134): Parameter "output_clock_frequency9" = "0 MHz"     Info (12134): Parameter "phase_shift9" = "0 ps"     Info (12134): Parameter "duty_cycle9" = "50"     Info (12134): Parameter "output_clock_frequency10" = "0 MHz"     Info (12134): Parameter "phase_shift10" = "0 ps"     Info (12134): Parameter "duty_cycle10" = "50"     Info (12134): Parameter "output_clock_frequency11" = "0 MHz"     Info (12134): Parameter "phase_shift11" = "0 ps"     Info (12134): Parameter "duty_cycle11" = "50"     Info (12134): Parameter "output_clock_frequency12" = "0 MHz"     Info (12134): Parameter "phase_shift12" = "0 ps"     Info (12134): Parameter "duty_cycle12" = "50"     Info (12134): Parameter "output_clock_frequency13" = "0 MHz"     Info (12134): Parameter "phase_shift13" = "0 ps"     Info (12134): Parameter "duty_cycle13" = "50"     Info (12134): Parameter "output_clock_frequency14" = "0 MHz"     Info (12134): Parameter "phase_shift14" = "0 ps"     Info (12134): Parameter "duty_cycle14" = "50"     Info (12134): Parameter "output_clock_frequency15" = "0 MHz"     Info (12134): Parameter "phase_shift15" = "0 ps"     Info (12134): Parameter "duty_cycle15" = "50"     Info (12134): Parameter "output_clock_frequency16" = "0 MHz"     Info (12134): Parameter "phase_shift16" = "0 ps"     Info (12134): Parameter "duty_cycle16" = "50"     Info (12134): Parameter "output_clock_frequency17" = "0 MHz"     Info (12134): Parameter "phase_shift17" = "0 ps"     Info (12134): Parameter "duty_cycle17" = "50"     Info (12134): Parameter "pll_type" = "General"     Info (12134): Parameter "pll_subtype" = "General" Info (281010): Generating sgate simulator netlist using Simgen SIMGEN_PROGRESS Start of Model generation -- 0% complete SIMGEN_PROGRESS Phase 1 : Internal Objects created -- 25% complete SIMGEN_PROGRESS Phase 2 : Connections between internal objects made -- 60% complete SIMGEN_PROGRESS Phase 3 : Netlist generated -- 100% complete Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning     Info: Peak virtual memory: 4794 megabytes     Info: Processing ended: Mon May 28 19:15:50 2018     Info: Elapsed time: 00:00:21     Info: Total CPU time (on all processors): 00:00:05 Info (23030): Evaluation of Tcl script run_simgen_cmd.tcl was successful Info: Quartus Prime Shell was successful. 0 errors, 0 warnings     Info: Peak virtual memory: 4666 megabytes     Info: Processing ended: Mon May 28 19:15:50 2018     Info: Elapsed time: 00:00:23     Info: Total CPU time (on all processors): 00:00:07
+Info: pll_1: Simgen was successful
+Info: pll_1: "sys_vga" instantiated altera_pll "pll_1"
+Info: pushbuttons: Starting RTL generation for module 'sys_vga_pushbuttons'
+Info: pushbuttons:   Generation command is [exec C:/intelfpga_lite/17.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=sys_vga_pushbuttons --dir=C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0014_pushbuttons_gen/ --quartus_dir=C:/intelfpga_lite/17.1/quartus --verilog --config=C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0014_pushbuttons_gen//sys_vga_pushbuttons_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0014_pushbuttons_gen/  ]
+Info: pushbuttons: Done RTL generation for module 'sys_vga_pushbuttons'
+Info: pushbuttons: "sys_vga" instantiated altera_avalon_pio "pushbuttons"
+Info: ram: Starting RTL generation for module 'sys_vga_ram'
+Info: ram:   Generation command is [exec C:/intelfpga_lite/17.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=sys_vga_ram --dir=C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0015_ram_gen/ --quartus_dir=C:/intelfpga_lite/17.1/quartus --verilog --config=C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0015_ram_gen//sys_vga_ram_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0015_ram_gen/  ]
+Info: ram: Done RTL generation for module 'sys_vga_ram'
+Info: ram: "sys_vga" instantiated altera_avalon_onchip_memory2 "ram"
+Info: reg32_avalon_interface_0: "sys_vga" instantiated reg32_avalon_interface "reg32_avalon_interface_0"
+Info: sys_sdram_pll_0: "sys_vga" instantiated altera_up_avalon_sys_sdram_pll "sys_sdram_pll_0"
+Info: sysid_qsys_0: "sys_vga" instantiated altera_avalon_sysid_qsys "sysid_qsys_0"
+Info: system_console: Starting RTL generation for module 'sys_vga_system_console'
+Info: system_console:   Generation command is [exec C:/intelfpga_lite/17.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=sys_vga_system_console --dir=C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0018_system_console_gen/ --quartus_dir=C:/intelfpga_lite/17.1/quartus --verilog --config=C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0018_system_console_gen//sys_vga_system_console_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0018_system_console_gen/  ]
+Info: system_console: Done RTL generation for module 'sys_vga_system_console'
+Info: system_console: "sys_vga" instantiated altera_avalon_jtag_uart "system_console"
+Info: mm_interconnect_0: "sys_vga" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_1: "sys_vga" instantiated altera_mm_interconnect "mm_interconnect_1"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_2: "sys_vga" instantiated altera_mm_interconnect "mm_interconnect_2"
+Info: irq_mapper: "sys_vga" instantiated altera_irq_mapper "irq_mapper"
+Info: irq_mapper_001: "sys_vga" instantiated altera_irq_mapper "irq_mapper_001"
+Info: rst_controller: "sys_vga" instantiated altera_reset_controller "rst_controller"
+Info: fpga_interfaces: "Arm_A9_HPS" instantiated altera_interface_generator "fpga_interfaces"
+Info: hps_io: "Arm_A9_HPS" instantiated altera_hps_io "hps_io"
+Info: sys_pll: Generating simgen model
+Info: sys_pll: Info: ******************************************************************* Info: Running Quartus Prime Shell     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition     Info: Copyright (C) 2017  Intel Corporation. All rights reserved.     Info: Your use of Intel Corporation's design tools, logic functions      Info: and other software and tools, and its AMPP partner logic      Info: functions, and any output files from any of the foregoing      Info: (including device programming or simulation files), and any      Info: associated documentation or information are expressly subject      Info: to the terms and conditions of the Intel Program License      Info: Subscription Agreement, the Intel Quartus Prime License Agreement,     Info: the Intel FPGA IP License Agreement, or other applicable license     Info: agreement, including, without limitation, that your use is for     Info: the sole purpose of programming logic devices manufactured by     Info: Intel and sold by Intel or its authorized distributors.  Please     Info: refer to the applicable agreement for further details.     Info: Processing started: Mon May 28 19:16:14 2018 Info: Command: quartus_sh -t run_simgen_cmd.tcl Info: ******************************************************************* Info: Running Quartus Prime Analysis & Synthesis     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition     Info: Copyright (C) 2017  Intel Corporation. All rights reserved.     Info: Your use of Intel Corporation's design tools, logic functions      Info: and other software and tools, and its AMPP partner logic      Info: functions, and any output files from any of the foregoing      Info: (including device programming or simulation files), and any      Info: associated documentation or information are expressly subject      Info: to the terms and conditions of the Intel Program License      Info: Subscription Agreement, the Intel Quartus Prime License Agreement,     Info: the Intel FPGA IP License Agreement, or other applicable license     Info: agreement, including, without limitation, that your use is for     Info: the sole purpose of programming logic devices manufactured by     Info: Intel and sold by Intel or its authorized distributors.  Please     Info: refer to the applicable agreement for further details.     Info: Processing started: Mon May 28 19:16:16 2018 Info: Command: quartus_map sys_vga_sys_sdram_pll_0_sys_pll.qpf --simgen --ini=disable_check_quartus_compatibility_qsys_only=on --simgen_parameter=CBX_HDL_LANGUAGE=VERILOG Info (20034): Auto device selection is not supported for Cyclone V device family. The default device, 5CGXFC7C7F23C8, is set. Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance. Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected Info (12021): Found 1 design units, including 1 entities, in source file sys_vga_sys_sdram_pll_0_sys_pll.v     Info (12023): Found entity 1: sys_vga_sys_sdram_pll_0_sys_pll File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0023_sys_pll_gen/sys_vga_sys_sdram_pll_0_sys_pll.v Line: 2 Info (12127): Elaborating entity "sys_vga_sys_sdram_pll_0_sys_pll" for the top level hierarchy Info (12128): Elaborating entity "altera_pll" for hierarchy "altera_pll:altera_pll_i" File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0023_sys_pll_gen/sys_vga_sys_sdram_pll_0_sys_pll.v Line: 88 Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "wire_to_nowhere_64" into its bus Info (12130): Elaborated megafunction instantiation "altera_pll:altera_pll_i" File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0023_sys_pll_gen/sys_vga_sys_sdram_pll_0_sys_pll.v Line: 88 Info (12133): Instantiated megafunction "altera_pll:altera_pll_i" with the following parameter: File: C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0023_sys_pll_gen/sys_vga_sys_sdram_pll_0_sys_pll.v Line: 88     Info (12134): Parameter "fractional_vco_multiplier" = "false"     Info (12134): Parameter "reference_clock_frequency" = "50.0 MHz"     Info (12134): Parameter "operation_mode" = "direct"     Info (12134): Parameter "number_of_clocks" = "2"     Info (12134): Parameter "output_clock_frequency0" = "50.000000 MHz"     Info (12134): Parameter "phase_shift0" = "0 ps"     Info (12134): Parameter "duty_cycle0" = "50"     Info (12134): Parameter "output_clock_frequency1" = "50.000000 MHz"     Info (12134): Parameter "phase_shift1" = "-3000 ps"     Info (12134): Parameter "duty_cycle1" = "50"     Info (12134): Parameter "output_clock_frequency2" = "0 MHz"     Info (12134): Parameter "phase_shift2" = "0 ps"     Info (12134): Parameter "duty_cycle2" = "50"     Info (12134): Parameter "output_clock_frequency3" = "0 MHz"     Info (12134): Parameter "phase_shift3" = "0 ps"     Info (12134): Parameter "duty_cycle3" = "50"     Info (12134): Parameter "output_clock_frequency4" = "0 MHz"     Info (12134): Parameter "phase_shift4" = "0 ps"     Info (12134): Parameter "duty_cycle4" = "50"     Info (12134): Parameter "output_clock_frequency5" = "0 MHz"     Info (12134): Parameter "phase_shift5" = "0 ps"     Info (12134): Parameter "duty_cycle5" = "50"     Info (12134): Parameter "output_clock_frequency6" = "0 MHz"     Info (12134): Parameter "phase_shift6" = "0 ps"     Info (12134): Parameter "duty_cycle6" = "50"     Info (12134): Parameter "output_clock_frequency7" = "0 MHz"     Info (12134): Parameter "phase_shift7" = "0 ps"     Info (12134): Parameter "duty_cycle7" = "50"     Info (12134): Parameter "output_clock_frequency8" = "0 MHz"     Info (12134): Parameter "phase_shift8" = "0 ps"     Info (12134): Parameter "duty_cycle8" = "50"     Info (12134): Parameter "output_clock_frequency9" = "0 MHz"     Info (12134): Parameter "phase_shift9" = "0 ps"     Info (12134): Parameter "duty_cycle9" = "50"     Info (12134): Parameter "output_clock_frequency10" = "0 MHz"     Info (12134): Parameter "phase_shift10" = "0 ps"     Info (12134): Parameter "duty_cycle10" = "50"     Info (12134): Parameter "output_clock_frequency11" = "0 MHz"     Info (12134): Parameter "phase_shift11" = "0 ps"     Info (12134): Parameter "duty_cycle11" = "50"     Info (12134): Parameter "output_clock_frequency12" = "0 MHz"     Info (12134): Parameter "phase_shift12" = "0 ps"     Info (12134): Parameter "duty_cycle12" = "50"     Info (12134): Parameter "output_clock_frequency13" = "0 MHz"     Info (12134): Parameter "phase_shift13" = "0 ps"     Info (12134): Parameter "duty_cycle13" = "50"     Info (12134): Parameter "output_clock_frequency14" = "0 MHz"     Info (12134): Parameter "phase_shift14" = "0 ps"     Info (12134): Parameter "duty_cycle14" = "50"     Info (12134): Parameter "output_clock_frequency15" = "0 MHz"     Info (12134): Parameter "phase_shift15" = "0 ps"     Info (12134): Parameter "duty_cycle15" = "50"     Info (12134): Parameter "output_clock_frequency16" = "0 MHz"     Info (12134): Parameter "phase_shift16" = "0 ps"     Info (12134): Parameter "duty_cycle16" = "50"     Info (12134): Parameter "output_clock_frequency17" = "0 MHz"     Info (12134): Parameter "phase_shift17" = "0 ps"     Info (12134): Parameter "duty_cycle17" = "50"     Info (12134): Parameter "pll_type" = "General"     Info (12134): Parameter "pll_subtype" = "General" Info (281010): Generating sgate simulator netlist using Simgen SIMGEN_PROGRESS Start of Model generation -- 0% complete SIMGEN_PROGRESS Phase 1 : Internal Objects created -- 25% complete SIMGEN_PROGRESS Phase 2 : Connections between internal objects made -- 60% complete SIMGEN_PROGRESS Phase 3 : Netlist generated -- 100% complete Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning     Info: Peak virtual memory: 4794 megabytes     Info: Processing ended: Mon May 28 19:16:36 2018     Info: Elapsed time: 00:00:20     Info: Total CPU time (on all processors): 00:00:05 Info (23030): Evaluation of Tcl script run_simgen_cmd.tcl was successful Info: Quartus Prime Shell was successful. 0 errors, 0 warnings     Info: Peak virtual memory: 4666 megabytes     Info: Processing ended: Mon May 28 19:16:37 2018     Info: Elapsed time: 00:00:23     Info: Total CPU time (on all processors): 00:00:07
+Info: sys_pll: Simgen was successful
+Info: sys_pll: "sys_sdram_pll_0" instantiated altera_pll "sys_pll"
+Info: reset_from_locked: "sys_sdram_pll_0" instantiated altera_up_avalon_reset_from_locked_signal "reset_from_locked"
+Info: alt_vip_vfr_0_avalon_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "alt_vip_vfr_0_avalon_master_translator"
+Info: alt_vip_vfr_0_avalon_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "alt_vip_vfr_0_avalon_master_agent"
+Info: Arm_A9_HPS_f2h_axi_slave_agent: "mm_interconnect_0" instantiated altera_merlin_axi_slave_ni "Arm_A9_HPS_f2h_axi_slave_agent"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: alt_vip_vfr_0_avalon_master_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "alt_vip_vfr_0_avalon_master_limiter"
+Info: Reusing file C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/simulation/submodules/altera_avalon_sc_fifo.v
+Info: Arm_A9_HPS_f2h_axi_slave_wr_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "Arm_A9_HPS_f2h_axi_slave_wr_burst_adapter"
+Info: Reusing file C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/simulation/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/simulation/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/simulation/submodules/altera_merlin_arbitrator.sv
+Info: Arm_A9_HPS_f2h_axi_slave_wr_rsp_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "Arm_A9_HPS_f2h_axi_slave_wr_rsp_width_adapter"
+Info: Reusing file C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/simulation/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/simulation/submodules/altera_merlin_burst_uncompressor.sv
+Info: fifo_hps_to_fpga_in_translator: "mm_interconnect_1" instantiated altera_merlin_slave_translator "fifo_hps_to_fpga_in_translator"
+Info: Arm_A9_HPS_h2f_axi_master_agent: "mm_interconnect_1" instantiated altera_merlin_axi_master_ni "Arm_A9_HPS_h2f_axi_master_agent"
+Info: Reusing file C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/simulation/submodules/altera_merlin_address_alignment.sv
+Info: fifo_hps_to_fpga_in_agent: "mm_interconnect_1" instantiated altera_merlin_slave_agent "fifo_hps_to_fpga_in_agent"
+Info: Reusing file C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/simulation/submodules/altera_merlin_burst_uncompressor.sv
+Info: fifo_hps_to_fpga_in_agent_rsp_fifo: "mm_interconnect_1" instantiated altera_avalon_sc_fifo "fifo_hps_to_fpga_in_agent_rsp_fifo"
+Info: Reusing file C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/simulation/submodules/altera_avalon_sc_fifo.v
+Info: router: "mm_interconnect_1" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_1" instantiated altera_merlin_router "router_002"
+Info: router_005: "mm_interconnect_1" instantiated altera_merlin_router "router_005"
+Info: cmd_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: Reusing file C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/simulation/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/simulation/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_1" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: avalon_st_adapter_003: "mm_interconnect_1" instantiated altera_avalon_st_adapter "avalon_st_adapter_003"
+Info: router: "mm_interconnect_2" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_2" instantiated altera_merlin_router "router_002"
+Info: cmd_demux: "mm_interconnect_2" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_2" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: Reusing file C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/simulation/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_2" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_001: "mm_interconnect_2" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+Info: rsp_mux: "mm_interconnect_2" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/simulation/submodules/altera_merlin_arbitrator.sv
+Info: crosser: "mm_interconnect_2" instantiated altera_avalon_st_handshake_clock_crosser "crosser"
+Info: Reusing file C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/simulation/submodules/altera_avalon_st_pipeline_base.v
+Info: border: "hps_io" instantiated altera_interface_generator "border"
+Info: Reusing file C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/simulation/submodules/verbosity_pkg.sv
+Info: Reusing file C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/simulation/submodules/avalon_utilities_pkg.sv
+Info: Reusing file C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/simulation/submodules/avalon_mm_pkg.sv
+Info: Reusing file C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/simulation/submodules/altera_avalon_mm_slave_bfm.sv
+Info: Reusing file C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/simulation/submodules/altera_avalon_interrupt_sink.sv
+Info: Reusing file C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/simulation/submodules/altera_avalon_clock_source.sv
+Info: Reusing file C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/simulation/submodules/altera_avalon_reset_source.sv
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: error_adapter_0: "avalon_st_adapter_003" instantiated error_adapter "error_adapter_0"
+Info: sys_vga: Done "sys_vga" with 61 modules, 108 files
+Info: qsys-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd="C:\Users\David\Desktop\chess hardware\Hardware\sys_vga\sys_vga.spd" --output-directory="C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/simulation/" --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=C:\Users\David\Desktop\chess hardware\Hardware\sys_vga\sys_vga.spd --output-directory=C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/simulation/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/simulation/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Generating the following file(s) for VCS simulator in C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/simulation/ directory:
+Info: 	synopsys/vcs/vcs_setup.sh
+Info: Generating the following file(s) for VCSMX simulator in C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/simulation/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/simulation/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	49 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/simulation/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/simulation/.
+Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate "C:\Users\David\Desktop\chess hardware\Hardware\sys_vga.qsys" --block-symbol-file --output-directory="C:\Users\David\Desktop\chess hardware\Hardware\sys_vga" --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading Hardware/sys_vga.qsys
+Progress: Reading input file
+Progress: Adding Arm_A9_HPS [altera_hps 17.1]
+Progress: Parameterizing module Arm_A9_HPS
+Progress: Adding alt_vip_itc_0 [alt_vip_itc 14.0]
+Progress: Parameterizing module alt_vip_itc_0
+Progress: Adding alt_vip_vfr_0 [alt_vip_vfr 14.0]
+Progress: Parameterizing module alt_vip_vfr_0
+Progress: Adding clock_bridge_0 [altera_clock_bridge 17.1]
+Progress: Parameterizing module clock_bridge_0
+Progress: Adding fifo_fpga_to_hps [altera_avalon_fifo 17.1]
+Progress: Parameterizing module fifo_fpga_to_hps
+Progress: Adding fifo_hps_to_fpga [altera_avalon_fifo 17.1]
+Progress: Parameterizing module fifo_hps_to_fpga
+Progress: Adding hex5_hex0 [altera_avalon_pio 17.1]
+Progress: Parameterizing module hex5_hex0
+Progress: Adding new_sdram_controller_0 [altera_avalon_new_sdram_controller 17.1]
+Progress: Parameterizing module new_sdram_controller_0
+Progress: Adding pll_0 [altera_pll 17.1]
+Progress: Parameterizing module pll_0
+Progress: Adding pll_1 [altera_pll 17.1]
+Progress: Parameterizing module pll_1
+Progress: Adding pushbuttons [altera_avalon_pio 17.1]
+Progress: Parameterizing module pushbuttons
+Progress: Adding ram [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module ram
+Progress: Adding reg32_avalon_interface_0 [reg32_avalon_interface 1.0]
+Progress: Parameterizing module reg32_avalon_interface_0
+Progress: Adding sys_sdram_pll_0 [altera_up_avalon_sys_sdram_pll 16.1]
+Progress: Parameterizing module sys_sdram_pll_0
+Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 17.1]
+Progress: Parameterizing module sysid_qsys_0
+Progress: Adding system_console [altera_avalon_jtag_uart 17.1]
+Progress: Parameterizing module system_console
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: sys_vga.Arm_A9_HPS: HPS Main PLL counter settings: n = 0  m = 73
+Info: sys_vga.Arm_A9_HPS: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: sys_vga.Arm_A9_HPS: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: sys_vga.Arm_A9_HPS: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: sys_vga.Arm_A9_HPS: Ensure that valid Cortex A9 boot code is available to the HPS system when enabling boot from FPGA and h2f_axi_master interface is connecting to slave component start at address 0x0.
+Warning: sys_vga.alt_vip_vfr_0: The module properties SIMULATION_MODEL_IN_VERILOG and SIMULATION_MODEL_IN_VHDL can not both be set when using the SIMULATION file property: src_hdl/alt_vipvfr131_vfr.v, src_hdl/alt_vipvfr131_vfr_controller.v, src_hdl/alt_vipvfr131_vfr_control_packet_encoder.v, src_hdl/alt_vipvfr131_prc.v, src_hdl/alt_vipvfr131_prc_core.v, src_hdl/alt_vipvfr131_prc_read_master.v, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_package.vhd, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_avalon_mm_master.v, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_unpack_data.v, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_avalon_mm_slave.v, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_stream_output.v, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_pulling_width_adapter.vhd, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_general_fifo.vhd, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_fifo_usedw_calculator.vhd, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_gray_clock_crosser.vhd, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_std_logic_vector_delay.vhd, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_one_bit_delay.vhd, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_logic_fifo.vhd, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_ram_fifo.vhd
+Info: sys_vga.new_sdram_controller_0: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: sys_vga.pll_0: The legal reference clock frequency is 50.0 MHz..800.0 MHz
+Info: sys_vga.pll_0: Able to implement PLL with user settings
+Info: sys_vga.pll_1: The legal reference clock frequency is 5.0 MHz..800.0 MHz
+Info: sys_vga.pll_1: Able to implement PLL with user settings
+Info: sys_vga.sys_sdram_pll_0: Refclk Freq: 50.0
+Info: sys_vga.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: sys_vga.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Info: sys_vga.system_console: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Warning: sys_vga.Arm_A9_HPS: Arm_A9_HPS.f2h_boot_from_fpga must be exported, or connected to a matching conduit.
+Warning: sys_vga.pll_0: pll_0.locked must be exported, or connected to a matching conduit.
+Warning: sys_vga.pll_1: pll_1.locked must be exported, or connected to a matching conduit.
+Warning: sys_vga.alt_vip_vfr_0: Interrupt sender alt_vip_vfr_0.interrupt_sender is not connected to an interrupt receiver
+Warning: sys_vga.: You have exported the interface fifo_fpga_to_hps.in but not its associated reset interface.  Export the driver(s) of fifo_fpga_to_hps.reset_in
+Warning: sys_vga.: You have exported the interface fifo_fpga_to_hps.in_csr but not its associated reset interface.  Export the driver(s) of fifo_fpga_to_hps.reset_in
+Warning: sys_vga.: You have exported the interface fifo_hps_to_fpga.out but not its associated reset interface.  Export the driver(s) of fifo_hps_to_fpga.reset_out
+Warning: sys_vga.: You have exported the interface fifo_hps_to_fpga.out_csr but not its associated reset interface.  Export the driver(s) of fifo_hps_to_fpga.reset_out
+Warning: sys_vga.: You have exported the interface ram.s2 but not its associated reset interface.  Export the driver(s) of ram.reset2
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate "C:\Users\David\Desktop\chess hardware\Hardware\sys_vga.qsys" --synthesis=VERILOG --output-directory="C:\Users\David\Desktop\chess hardware\Hardware\sys_vga\synthesis" --family="Cyclone V" --part=5CSEMA5F31C6
+Progress: Loading Hardware/sys_vga.qsys
+Progress: Reading input file
+Progress: Adding Arm_A9_HPS [altera_hps 17.1]
+Progress: Parameterizing module Arm_A9_HPS
+Progress: Adding alt_vip_itc_0 [alt_vip_itc 14.0]
+Progress: Parameterizing module alt_vip_itc_0
+Progress: Adding alt_vip_vfr_0 [alt_vip_vfr 14.0]
+Progress: Parameterizing module alt_vip_vfr_0
+Progress: Adding clock_bridge_0 [altera_clock_bridge 17.1]
+Progress: Parameterizing module clock_bridge_0
+Progress: Adding fifo_fpga_to_hps [altera_avalon_fifo 17.1]
+Progress: Parameterizing module fifo_fpga_to_hps
+Progress: Adding fifo_hps_to_fpga [altera_avalon_fifo 17.1]
+Progress: Parameterizing module fifo_hps_to_fpga
+Progress: Adding hex5_hex0 [altera_avalon_pio 17.1]
+Progress: Parameterizing module hex5_hex0
+Progress: Adding new_sdram_controller_0 [altera_avalon_new_sdram_controller 17.1]
+Progress: Parameterizing module new_sdram_controller_0
+Progress: Adding pll_0 [altera_pll 17.1]
+Progress: Parameterizing module pll_0
+Progress: Adding pll_1 [altera_pll 17.1]
+Progress: Parameterizing module pll_1
+Progress: Adding pushbuttons [altera_avalon_pio 17.1]
+Progress: Parameterizing module pushbuttons
+Progress: Adding ram [altera_avalon_onchip_memory2 17.1]
+Progress: Parameterizing module ram
+Progress: Adding reg32_avalon_interface_0 [reg32_avalon_interface 1.0]
+Progress: Parameterizing module reg32_avalon_interface_0
+Progress: Adding sys_sdram_pll_0 [altera_up_avalon_sys_sdram_pll 16.1]
+Progress: Parameterizing module sys_sdram_pll_0
+Progress: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 17.1]
+Progress: Parameterizing module sysid_qsys_0
+Progress: Adding system_console [altera_avalon_jtag_uart 17.1]
+Progress: Parameterizing module system_console
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: sys_vga.Arm_A9_HPS: HPS Main PLL counter settings: n = 0  m = 73
+Info: sys_vga.Arm_A9_HPS: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: sys_vga.Arm_A9_HPS: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: sys_vga.Arm_A9_HPS: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: sys_vga.Arm_A9_HPS: Ensure that valid Cortex A9 boot code is available to the HPS system when enabling boot from FPGA and h2f_axi_master interface is connecting to slave component start at address 0x0.
+Warning: sys_vga.alt_vip_vfr_0: The module properties SIMULATION_MODEL_IN_VERILOG and SIMULATION_MODEL_IN_VHDL can not both be set when using the SIMULATION file property: src_hdl/alt_vipvfr131_vfr.v, src_hdl/alt_vipvfr131_vfr_controller.v, src_hdl/alt_vipvfr131_vfr_control_packet_encoder.v, src_hdl/alt_vipvfr131_prc.v, src_hdl/alt_vipvfr131_prc_core.v, src_hdl/alt_vipvfr131_prc_read_master.v, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_package.vhd, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_avalon_mm_bursting_master_fifo.vhd, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_avalon_mm_master.v, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_unpack_data.v, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_avalon_mm_slave.v, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_stream_output.v, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_pulling_width_adapter.vhd, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_general_fifo.vhd, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_fifo_usedw_calculator.vhd, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_gray_clock_crosser.vhd, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_std_logic_vector_delay.vhd, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_one_bit_delay.vhd, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_logic_fifo.vhd, C:/intelfpga_lite/17.1/ip/altera/frame_reader/common_hdl/alt_vipvfr131_common_ram_fifo.vhd
+Info: sys_vga.new_sdram_controller_0: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: sys_vga.pll_0: The legal reference clock frequency is 50.0 MHz..800.0 MHz
+Info: sys_vga.pll_0: Able to implement PLL with user settings
+Info: sys_vga.pll_1: The legal reference clock frequency is 5.0 MHz..800.0 MHz
+Info: sys_vga.pll_1: Able to implement PLL with user settings
+Info: sys_vga.sys_sdram_pll_0: Refclk Freq: 50.0
+Info: sys_vga.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: sys_vga.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Info: sys_vga.system_console: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Warning: sys_vga.Arm_A9_HPS: Arm_A9_HPS.f2h_boot_from_fpga must be exported, or connected to a matching conduit.
+Warning: sys_vga.pll_0: pll_0.locked must be exported, or connected to a matching conduit.
+Warning: sys_vga.pll_1: pll_1.locked must be exported, or connected to a matching conduit.
+Warning: sys_vga.alt_vip_vfr_0: Interrupt sender alt_vip_vfr_0.interrupt_sender is not connected to an interrupt receiver
+Warning: sys_vga.: You have exported the interface fifo_fpga_to_hps.in but not its associated reset interface.  Export the driver(s) of fifo_fpga_to_hps.reset_in
+Warning: sys_vga.: You have exported the interface fifo_fpga_to_hps.in_csr but not its associated reset interface.  Export the driver(s) of fifo_fpga_to_hps.reset_in
+Warning: sys_vga.: You have exported the interface fifo_hps_to_fpga.out but not its associated reset interface.  Export the driver(s) of fifo_hps_to_fpga.reset_out
+Warning: sys_vga.: You have exported the interface fifo_hps_to_fpga.out_csr but not its associated reset interface.  Export the driver(s) of fifo_hps_to_fpga.reset_out
+Warning: sys_vga.: You have exported the interface ram.s2 but not its associated reset interface.  Export the driver(s) of ram.reset2
+Info: sys_vga: Generating sys_vga "sys_vga" for QUARTUS_SYNTH
+Info: Interconnect is inserted between master alt_vip_vfr_0.avalon_master and slave Arm_A9_HPS.f2h_axi_slave because the master is of type avalon and the slave is of type axi.
+Info: Inserting clock-crossing logic between cmd_demux.src1 and cmd_mux_001.sink0
+Info: Inserting clock-crossing logic between cmd_demux_001.src1 and cmd_mux_001.sink1
+Info: Inserting clock-crossing logic between rsp_demux_001.src0 and rsp_mux.sink1
+Info: Inserting clock-crossing logic between rsp_demux_001.src1 and rsp_mux_001.sink1
+Warning: Arm_A9_HPS.f2h_irq0: Cannot connect clock for irq_mapper.sender
+Warning: Arm_A9_HPS.f2h_irq0: Cannot connect reset for irq_mapper.sender
+Warning: Arm_A9_HPS.f2h_irq1: Cannot connect clock for irq_mapper_001.sender
+Warning: Arm_A9_HPS.f2h_irq1: Cannot connect reset for irq_mapper_001.sender
+Info: Arm_A9_HPS: "Running  for module: Arm_A9_HPS"
+Info: Arm_A9_HPS: HPS Main PLL counter settings: n = 0  m = 73
+Info: Arm_A9_HPS: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: Arm_A9_HPS: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: Arm_A9_HPS: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Info: Arm_A9_HPS: Ensure that valid Cortex A9 boot code is available to the HPS system when enabling boot from FPGA and h2f_axi_master interface is connecting to slave component start at address 0x0.
+Info: Arm_A9_HPS: "sys_vga" instantiated altera_hps "Arm_A9_HPS"
+Info: alt_vip_itc_0: "sys_vga" instantiated alt_vip_itc "alt_vip_itc_0"
+Info: alt_vip_vfr_0: "sys_vga" instantiated alt_vip_vfr "alt_vip_vfr_0"
+Info: fifo_fpga_to_hps: Starting RTL generation for module 'sys_vga_fifo_fpga_to_hps'
+Info: fifo_fpga_to_hps:   Generation command is [exec C:/intelfpga_lite/17.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_fifo -- C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_fifo/generate_rtl.pl --name=sys_vga_fifo_fpga_to_hps --dir=C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0060_fifo_fpga_to_hps_gen/ --quartus_dir=C:/intelfpga_lite/17.1/quartus --verilog --config=C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0060_fifo_fpga_to_hps_gen//sys_vga_fifo_fpga_to_hps_component_configuration.pl  --do_build_sim=0  ]
+Info: fifo_fpga_to_hps: Done RTL generation for module 'sys_vga_fifo_fpga_to_hps'
+Info: fifo_fpga_to_hps: "sys_vga" instantiated altera_avalon_fifo "fifo_fpga_to_hps"
+Info: hex5_hex0: Starting RTL generation for module 'sys_vga_hex5_hex0'
+Info: hex5_hex0:   Generation command is [exec C:/intelfpga_lite/17.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=sys_vga_hex5_hex0 --dir=C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0061_hex5_hex0_gen/ --quartus_dir=C:/intelfpga_lite/17.1/quartus --verilog --config=C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0061_hex5_hex0_gen//sys_vga_hex5_hex0_component_configuration.pl  --do_build_sim=0  ]
+Info: hex5_hex0: Done RTL generation for module 'sys_vga_hex5_hex0'
+Info: hex5_hex0: "sys_vga" instantiated altera_avalon_pio "hex5_hex0"
+Info: new_sdram_controller_0: Starting RTL generation for module 'sys_vga_new_sdram_controller_0'
+Info: new_sdram_controller_0:   Generation command is [exec C:/intelfpga_lite/17.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=sys_vga_new_sdram_controller_0 --dir=C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0062_new_sdram_controller_0_gen/ --quartus_dir=C:/intelfpga_lite/17.1/quartus --verilog --config=C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0062_new_sdram_controller_0_gen//sys_vga_new_sdram_controller_0_component_configuration.pl  --do_build_sim=0  ]
+Info: new_sdram_controller_0: Done RTL generation for module 'sys_vga_new_sdram_controller_0'
+Info: new_sdram_controller_0: "sys_vga" instantiated altera_avalon_new_sdram_controller "new_sdram_controller_0"
+Info: pll_0: "sys_vga" instantiated altera_pll "pll_0"
+Info: pll_1: "sys_vga" instantiated altera_pll "pll_1"
+Info: pushbuttons: Starting RTL generation for module 'sys_vga_pushbuttons'
+Info: pushbuttons:   Generation command is [exec C:/intelfpga_lite/17.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=sys_vga_pushbuttons --dir=C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0065_pushbuttons_gen/ --quartus_dir=C:/intelfpga_lite/17.1/quartus --verilog --config=C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0065_pushbuttons_gen//sys_vga_pushbuttons_component_configuration.pl  --do_build_sim=0  ]
+Info: pushbuttons: Done RTL generation for module 'sys_vga_pushbuttons'
+Info: pushbuttons: "sys_vga" instantiated altera_avalon_pio "pushbuttons"
+Info: ram: Starting RTL generation for module 'sys_vga_ram'
+Info: ram:   Generation command is [exec C:/intelfpga_lite/17.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=sys_vga_ram --dir=C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0066_ram_gen/ --quartus_dir=C:/intelfpga_lite/17.1/quartus --verilog --config=C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0066_ram_gen//sys_vga_ram_component_configuration.pl  --do_build_sim=0  ]
+Info: ram: Done RTL generation for module 'sys_vga_ram'
+Info: ram: "sys_vga" instantiated altera_avalon_onchip_memory2 "ram"
+Info: reg32_avalon_interface_0: "sys_vga" instantiated reg32_avalon_interface "reg32_avalon_interface_0"
+Info: sys_sdram_pll_0: "sys_vga" instantiated altera_up_avalon_sys_sdram_pll "sys_sdram_pll_0"
+Info: sysid_qsys_0: "sys_vga" instantiated altera_avalon_sysid_qsys "sysid_qsys_0"
+Info: system_console: Starting RTL generation for module 'sys_vga_system_console'
+Info: system_console:   Generation command is [exec C:/intelfpga_lite/17.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/17.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin/perl_lib -I C:/intelfpga_lite/17.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/17.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=sys_vga_system_console --dir=C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0069_system_console_gen/ --quartus_dir=C:/intelfpga_lite/17.1/quartus --verilog --config=C:/Users/David/AppData/Local/Temp/alt7680_407294363218651650.dir/0069_system_console_gen//sys_vga_system_console_component_configuration.pl  --do_build_sim=0  ]
+Info: system_console: Done RTL generation for module 'sys_vga_system_console'
+Info: system_console: "sys_vga" instantiated altera_avalon_jtag_uart "system_console"
+Info: mm_interconnect_0: "sys_vga" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_1: "sys_vga" instantiated altera_mm_interconnect "mm_interconnect_1"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_2: "sys_vga" instantiated altera_mm_interconnect "mm_interconnect_2"
+Info: irq_mapper: "sys_vga" instantiated altera_irq_mapper "irq_mapper"
+Info: irq_mapper_001: "sys_vga" instantiated altera_irq_mapper "irq_mapper_001"
+Info: rst_controller: "sys_vga" instantiated altera_reset_controller "rst_controller"
+Info: fpga_interfaces: "Arm_A9_HPS" instantiated altera_interface_generator "fpga_interfaces"
+Info: hps_io: "Arm_A9_HPS" instantiated altera_hps_io "hps_io"
+Info: sys_pll: "sys_sdram_pll_0" instantiated altera_pll "sys_pll"
+Info: reset_from_locked: "sys_sdram_pll_0" instantiated altera_up_avalon_reset_from_locked_signal "reset_from_locked"
+Info: alt_vip_vfr_0_avalon_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "alt_vip_vfr_0_avalon_master_translator"
+Info: alt_vip_vfr_0_avalon_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "alt_vip_vfr_0_avalon_master_agent"
+Info: Arm_A9_HPS_f2h_axi_slave_agent: "mm_interconnect_0" instantiated altera_merlin_axi_slave_ni "Arm_A9_HPS_f2h_axi_slave_agent"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: alt_vip_vfr_0_avalon_master_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "alt_vip_vfr_0_avalon_master_limiter"
+Info: Reusing file C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: Arm_A9_HPS_f2h_axi_slave_wr_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "Arm_A9_HPS_f2h_axi_slave_wr_burst_adapter"
+Info: Reusing file C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: Arm_A9_HPS_f2h_axi_slave_wr_rsp_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "Arm_A9_HPS_f2h_axi_slave_wr_rsp_width_adapter"
+Info: Reusing file C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: fifo_hps_to_fpga_in_translator: "mm_interconnect_1" instantiated altera_merlin_slave_translator "fifo_hps_to_fpga_in_translator"
+Info: Arm_A9_HPS_h2f_axi_master_agent: "mm_interconnect_1" instantiated altera_merlin_axi_master_ni "Arm_A9_HPS_h2f_axi_master_agent"
+Info: Reusing file C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: fifo_hps_to_fpga_in_agent: "mm_interconnect_1" instantiated altera_merlin_slave_agent "fifo_hps_to_fpga_in_agent"
+Info: Reusing file C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: fifo_hps_to_fpga_in_agent_rsp_fifo: "mm_interconnect_1" instantiated altera_avalon_sc_fifo "fifo_hps_to_fpga_in_agent_rsp_fifo"
+Info: Reusing file C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: router: "mm_interconnect_1" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_1" instantiated altera_merlin_router "router_002"
+Info: router_005: "mm_interconnect_1" instantiated altera_merlin_router "router_005"
+Info: cmd_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: Reusing file C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_1" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: avalon_st_adapter_003: "mm_interconnect_1" instantiated altera_avalon_st_adapter "avalon_st_adapter_003"
+Info: router: "mm_interconnect_2" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_2" instantiated altera_merlin_router "router_002"
+Info: cmd_demux: "mm_interconnect_2" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_2" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: Reusing file C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_2" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_demux_001: "mm_interconnect_2" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+Info: rsp_mux: "mm_interconnect_2" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: crosser: "mm_interconnect_2" instantiated altera_avalon_st_handshake_clock_crosser "crosser"
+Info: Reusing file C:/Users/David/Desktop/chess hardware/Hardware/sys_vga/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: border: "hps_io" instantiated altera_interface_generator "border"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: error_adapter_0: "avalon_st_adapter_003" instantiated error_adapter "error_adapter_0"
+Info: sys_vga: Done "sys_vga" with 61 modules, 161 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

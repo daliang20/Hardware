@@ -1,0 +1,23 @@
+IP Ports Diff Report for sys_vga
+Mon May 28 19:19:03 2018
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. IP Information
+
+
+
++----------------------------------------------------+
+; IP Information                                     ;
++----------------------+-----------------------------+
+; IP Variation Name    ; sys_vga                     ;
+; Prior Version        ; ACDS_v17.1                  ;
+; New Version          ; ACDS_v17.1                  ;
+; New File             ; sys_vga/synthesis/sys_vga.v ;
+; Has Port Differences ; No                          ;
++----------------------+-----------------------------+
+
+
