@@ -11,6 +11,7 @@ module zezima (
     input           	cpu_fpga_fifo_empty,
 	input 				cpu_fpga_fifo_rdata_dav,
 	input 		[31:0]	cpu_fpga_fifo_rdata,
+	output reg  [7: 0]  fsm_st,
     output          	fpga_cpu_interrupt,
 	output reg  		fpga_cpu_fifo_wr,
 	output reg	[31:0]  fpga_cpu_fifo_wdata
@@ -39,7 +40,7 @@ module zezima (
 	reg 	[3:0] 	castle_enp_cnt, nxt_castle_enp_cnt;
 	reg 	[4:0] 	words_rcvd, nxt_words_rcvd;
     reg     [9:0]   original_piece  [63:0], nxt_original_piece [63:0];
-    reg     [9:0]   fsm_st, nxt_fsm_st;
+    reg     [7:0]   nxt_fsm_st;
 	reg 	[15:0] 	en_passant_flags, nxt_en_passant_flags;
 	reg 	[3:0] 	castle_flags, nxt_castle_flags;
 
@@ -265,9 +266,10 @@ module zezima (
 
 			if(words_rcvd == (DATA_LENGTH-1))
 				nxt_words_rcvd = 0;
-
-			else if (cpu_fpga_fifo_rdata_dav) begin
+			else if (cpu_fpga_fifo_rdata_dav)
 				nxt_words_rcvd = words_rcvd + 5'd1;
+
+			if(cpu_fpga_fifo_rdata_dav) begin
 				case(words_rcvd)
 					5'd0: begin
 						nxt_original_piece[0] = cpu_fpga_fifo_rdata[9:0];
@@ -454,7 +456,6 @@ module zezima (
     // CHESSBOARD
     ////////////////////////////////////////////////////////////////////////////
 	// Creates a net array for the pieces on the squares
-	// TODO: make sure this order is correct for all modules!
 	wire [639:0] original_pieces =
 		{row_8, original_piece[55], original_piece[54], original_piece[53],
 			original_piece[52], original_piece[51], original_piece[50],

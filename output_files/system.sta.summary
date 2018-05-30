@@ -7,7 +7,7 @@ Slack : 1.730
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Setup 'altera_reserved_tck'
-Slack : 12.379
+Slack : 12.342
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'sys_vga:u0|sys_vga_Arm_A9_HPS:arm_a9_hps|sys_vga_Arm_A9_HPS_hps_io:hps_io|sys_vga_Arm_A9_HPS_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll|afi_clk_write_clk'
@@ -15,7 +15,7 @@ Slack : 0.143
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Hold 'altera_reserved_tck'
-Slack : 0.366
+Slack : 0.500
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Recovery 'sys_vga:u0|sys_vga_Arm_A9_HPS:arm_a9_hps|sys_vga_Arm_A9_HPS_hps_io:hps_io|sys_vga_Arm_A9_HPS_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll|afi_clk_write_clk'
@@ -23,7 +23,7 @@ Slack : 3.375
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Recovery 'altera_reserved_tck'
-Slack : 14.026
+Slack : 14.734
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Removal 'sys_vga:u0|sys_vga_Arm_A9_HPS:arm_a9_hps|sys_vga_Arm_A9_HPS_hps_io:hps_io|sys_vga_Arm_A9_HPS_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll|afi_clk_write_clk'
@@ -31,7 +31,7 @@ Slack : 0.470
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Removal 'altera_reserved_tck'
-Slack : 0.926
+Slack : 0.914
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'sys_vga:u0|sys_vga_Arm_A9_HPS:arm_a9_hps|sys_vga_Arm_A9_HPS_hps_io:hps_io|sys_vga_Arm_A9_HPS_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll|pll_write_clk_dq_write_clk'
@@ -43,7 +43,7 @@ Slack : 0.623
 TNS   : 0.000
 
 Type  : Slow 1100mV 85C Model Minimum Pulse Width 'altera_reserved_tck'
-Slack : 15.825
+Slack : 15.841
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Setup 'sys_vga:u0|sys_vga_Arm_A9_HPS:arm_a9_hps|sys_vga_Arm_A9_HPS_hps_io:hps_io|sys_vga_Arm_A9_HPS_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll|afi_clk_write_clk'
@@ -51,7 +51,7 @@ Slack : 1.727
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Setup 'altera_reserved_tck'
-Slack : 12.466
+Slack : 12.369
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'sys_vga:u0|sys_vga_Arm_A9_HPS:arm_a9_hps|sys_vga_Arm_A9_HPS_hps_io:hps_io|sys_vga_Arm_A9_HPS_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll|afi_clk_write_clk'
@@ -59,7 +59,7 @@ Slack : 0.162
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Hold 'altera_reserved_tck'
-Slack : 0.392
+Slack : 0.475
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Recovery 'sys_vga:u0|sys_vga_Arm_A9_HPS:arm_a9_hps|sys_vga_Arm_A9_HPS_hps_io:hps_io|sys_vga_Arm_A9_HPS_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll|afi_clk_write_clk'
@@ -67,7 +67,7 @@ Slack : 3.468
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Recovery 'altera_reserved_tck'
-Slack : 14.184
+Slack : 14.807
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Removal 'sys_vga:u0|sys_vga_Arm_A9_HPS:arm_a9_hps|sys_vga_Arm_A9_HPS_hps_io:hps_io|sys_vga_Arm_A9_HPS_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll|afi_clk_write_clk'
@@ -75,7 +75,7 @@ Slack : 0.460
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Removal 'altera_reserved_tck'
-Slack : 0.854
+Slack : 0.841
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'sys_vga:u0|sys_vga_Arm_A9_HPS:arm_a9_hps|sys_vga_Arm_A9_HPS_hps_io:hps_io|sys_vga_Arm_A9_HPS_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll|pll_write_clk_dq_write_clk'
@@ -87,7 +87,7 @@ Slack : 0.630
 TNS   : 0.000
 
 Type  : Slow 1100mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
-Slack : 15.839
+Slack : 15.852
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Setup 'sys_vga:u0|sys_vga_Arm_A9_HPS:arm_a9_hps|sys_vga_Arm_A9_HPS_hps_io:hps_io|sys_vga_Arm_A9_HPS_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll|afi_clk_write_clk'
@@ -95,7 +95,7 @@ Slack : 2.110
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Setup 'altera_reserved_tck'
-Slack : 14.250
+Slack : 14.251
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'sys_vga:u0|sys_vga_Arm_A9_HPS:arm_a9_hps|sys_vga_Arm_A9_HPS_hps_io:hps_io|sys_vga_Arm_A9_HPS_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll|afi_clk_write_clk'
@@ -103,7 +103,7 @@ Slack : 0.084
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Hold 'altera_reserved_tck'
-Slack : 0.210
+Slack : 0.211
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Recovery 'sys_vga:u0|sys_vga_Arm_A9_HPS:arm_a9_hps|sys_vga_Arm_A9_HPS_hps_io:hps_io|sys_vga_Arm_A9_HPS_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll|afi_clk_write_clk'
@@ -111,11 +111,11 @@ Slack : 3.727
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Recovery 'altera_reserved_tck'
-Slack : 15.179
+Slack : 15.650
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Removal 'altera_reserved_tck'
-Slack : 0.453
+Slack : 0.437
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Removal 'sys_vga:u0|sys_vga_Arm_A9_HPS:arm_a9_hps|sys_vga_Arm_A9_HPS_hps_io:hps_io|sys_vga_Arm_A9_HPS_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll|afi_clk_write_clk'
@@ -131,7 +131,7 @@ Slack : 0.891
 TNS   : 0.000
 
 Type  : Fast 1100mV 85C Model Minimum Pulse Width 'altera_reserved_tck'
-Slack : 15.814
+Slack : 15.812
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Setup 'sys_vga:u0|sys_vga_Arm_A9_HPS:arm_a9_hps|sys_vga_Arm_A9_HPS_hps_io:hps_io|sys_vga_Arm_A9_HPS_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll|afi_clk_write_clk'
@@ -139,7 +139,7 @@ Slack : 2.110
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Setup 'altera_reserved_tck'
-Slack : 14.513
+Slack : 14.507
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Hold 'sys_vga:u0|sys_vga_Arm_A9_HPS:arm_a9_hps|sys_vga_Arm_A9_HPS_hps_io:hps_io|sys_vga_Arm_A9_HPS_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll|afi_clk_write_clk'
@@ -155,11 +155,11 @@ Slack : 3.825
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Recovery 'altera_reserved_tck'
-Slack : 15.377
+Slack : 15.799
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Removal 'altera_reserved_tck'
-Slack : 0.395
+Slack : 0.374
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Removal 'sys_vga:u0|sys_vga_Arm_A9_HPS:arm_a9_hps|sys_vga_Arm_A9_HPS_hps_io:hps_io|sys_vga_Arm_A9_HPS_hps_io_border:border|hps_sdram:hps_sdram_inst|hps_sdram_pll:pll|afi_clk_write_clk'
@@ -175,7 +175,7 @@ Slack : 0.894
 TNS   : 0.000
 
 Type  : Fast 1100mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
-Slack : 15.810
+Slack : 15.826
 TNS   : 0.000
 
 ------------------------------------------------------------

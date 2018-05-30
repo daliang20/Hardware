@@ -90,14 +90,17 @@ wire [31:0] hex5_0bus;
 
 // These two form {led, hex} to_hex_to_led
 wire [31:0] hex;
+wire [7:0]  led; 
+
+assign LEDR[7:0] = led;
 
 
-hex2seg f1(.hex(hex[3:0]), .seg(HEX0));
-hex2seg f2(.hex(hex[7:4]), .seg(HEX1));
-hex2seg f3(.hex(hex[11:8]), .seg(HEX2));
-hex2seg f4(.hex(hex[15:12]), .seg(HEX3));
-hex2seg f5(.hex(hex[19:16]), .seg(HEX4));
-hex2seg f6(.hex(hex[23:20]), .seg(HEX5));
+hex2decseg f1(.hex(hex[3:0]), .seg(HEX0));
+hex2textseg f2(.hex(hex[7:4]), .seg(HEX1));
+hex2decseg f3(.hex(hex[11:8]), .seg(HEX2));
+hex2textseg f4(.hex(hex[15:12]), .seg(HEX3));
+hex2decseg f5(.hex(4'hff), .seg(HEX4));
+hex2decseg f6(.hex(4'hff), .seg(HEX5));
 
 //=======================================================
 // HPS_to_FPGA FIFO state machine
@@ -198,6 +201,7 @@ end // always @(posedge state_clock)
         .cpu_fpga_fifo_rdata_dav    (cpu_fpga_fifo_rdata_dav),
         .cpu_fpga_fifo_rdata        (cpu_fpga_fifo_rdata),
         .fpga_cpu_interrupt         (),
+		  .fsm_st 							(led),
         .fpga_cpu_fifo_wr           (fpga_cpu_fifo_wr),
         .fpga_cpu_fifo_wdata        (fpga_cpu_fifo_wdata)
     );
